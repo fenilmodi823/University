@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DVD-Style Bouncing Ball</title>
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      width="500"
+      height="500"
+      style="border: 1px solid #000"
+    ></canvas>
+    <script>
+      const canvas = document.getElementById("myCanvas");
+      const ctx = canvas.getContext("2d");
+
+      let x = Math.random() * 400 + 50;
+      let y = Math.random() * 400 + 50;
+      let dx = 2;
+      let dy = 3;
+      const ballRadius = 20;
+
+      const colors = ["red", "blue", "green", "purple", "orange"];
+      let ballColor = "blue";
+
+      function getRandomColor() {
+        return colors[Math.floor(Math.random() * colors.length)];
+      }
+
+      function drawBall() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        ctx.beginPath();
+        ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
+        ctx.fillStyle = ballColor;
+        ctx.fill();
+        ctx.closePath();
+
+        x += dx;
+        y += dy;
+
+        if (x + ballRadius > canvas.width || x - ballRadius < 0) {
+          dx = -dx;
+          ballColor = getRandomColor();
+        }
+        if (y + ballRadius > canvas.height || y - ballRadius < 0) {
+          dy = -dy;
+          ballColor = getRandomColor();
+        }
+
+        requestAnimationFrame(drawBall);
+      }
+
+      drawBall();
+    </script>
+  </body>
+</html>
