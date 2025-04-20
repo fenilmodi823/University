@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Missions Info</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background: #0f0f1a;
+        color: white;
+        font-family: sans-serif;
+      }
+      .glass {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="bg-gray-900 p-4 fixed w-full z-50">
+      <nav class="container mx-auto flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-bold text-indigo-400"
+          >🚀 Cosmic Panel</a
+        >
+        <ul class="flex space-x-4">
+          <li>
+            <a href="index.html" class="hover:text-indigo-300">Dashboard</a>
+          </li>
+          <li><a href="#ongoing" class="hover:text-indigo-300">Ongoing</a></li>
+          <li><a href="#past" class="hover:text-indigo-300">Past</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="pt-20 container mx-auto p-6 space-y-12">
+      <!-- Ongoing Missions -->
+      <section id="ongoing">
+        <h2 class="text-3xl font-semibold mb-6 text-indigo-400">
+          Ongoing Missions
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <a
+            href="https://www.nasa.gov/specials/artemis/"
+            target="_blank"
+            class="glass bg-black bg-opacity-50 p-6 rounded-xl backdrop-blur block hover:scale-105 transition"
+          >
+            <h3 class="text-xl font-bold mb-2">NASA Artemis I</h3>
+            <p class="text-gray-300 mb-4">
+              Uncrewed test flight around the Moon, paving the way for future
+              crewed Artemis missions.
+            </p>
+          </a>
+          <a
+            href="https://mars.nasa.gov/mars2020/"
+            target="_blank"
+            class="glass bg-black bg-opacity-50 p-6 rounded-xl backdrop-blur block hover:scale-105 transition"
+          >
+            <h3 class="text-xl font-bold mb-2">Mars Perseverance Rover</h3>
+            <p class="text-gray-300 mb-4">
+              Exploring Martian geology and seeking signs of ancient life since
+              landing in 2021.
+            </p>
+          </a>
+          <a
+            href="https://www.jwst.nasa.gov/"
+            target="_blank"
+            class="glass bg-black bg-opacity-50 p-6 rounded-xl backdrop-blur block hover:scale-105 transition"
+          >
+            <h3 class="text-xl font-bold mb-2">James Webb Space Telescope</h3>
+            <p class="text-gray-300 mb-4">
+              Observing the Universe’s first galaxies, star formation, and
+              exoplanets since 2022.
+            </p>
+          </a>
+          <a
+            href="https://www.nasa.gov/mission_pages/station/main/index.html"
+            target="_blank"
+            class="glass bg-black bg-opacity-50 p-6 rounded-xl backdrop-blur block hover:scale-105 transition"
+          >
+            <h3 class="text-xl font-bold mb-2">ISS Operations</h3>
+            <p class="text-gray-300 mb-4">
+              Continuous human presence in low Earth orbit since 2000,
+              supporting research and technology.
+            </p>
+          </a>
+          <a
+            href="https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/ExoMars"
+            target="_blank"
+            class="glass bg-black bg-opacity-50 p-6 rounded-xl backdrop-blur block hover:scale-105 transition"
+          >
+            <h3 class="text-xl font-bold mb-2">ESA ExoMars</h3>
+            <p class="text-gray-300 mb-4">
+              Rosalind Franklin rover mission to search for signs of past life
+              on Mars (launch 2028).
+            </p>
+          </a>
+          <a
+            href="https://www.spacex.com/vehicles/crew-dragon/"
+            target="_blank"
+            class="glass bg-black bg-opacity-50 p-6 rounded-xl backdrop-blur block hover:scale-105 transition"
+          >
+            <h3 class="text-xl font-bold mb-2">SpaceX Crew-6</h3>
+            <p class="text-gray-300 mb-4">
+              Crewed mission to the ISS launched by SpaceX, expanding commercial
+              crew capabilities.
+            </p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Past Missions -->
+      <section id="past">
+        <h2 class="text-3xl font-semibold mb-6 text-indigo-400">
+          Past Missions
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <a
+            href="https://www.nasa.gov/mission_pages/apollo/apollo11.html"
+            target="_blank"
+            class="glass bg-black bg-opacity-50 p-6 rounded-xl backdrop-blur block hover:scale-105 transition"
+          >
+            <h3 class="text-xl font-bold mb-2">Apollo 11</h3>
+            <p class="text-gray-300 mb-4">
+              First crewed lunar landing mission in 1969, marking humanity’s
+              first steps on the Moon.
+            </p>
+          </a>
+          <a
+            href="https://www.nasa.gov/mission_pages/voyager/voyager20170228.html"
+            target="_blank"
+            class="glass bg-black bg-opacity-50 p-6 rounded-xl backdrop-blur block hover:scale-105 transition"
+          >
+            <h3 class="text-xl font-bold mb-2">Voyager 1</h3>
+            <p class="text-gray-300 mb-4">
+              Launched in 1977, now the farthest human-made object exploring
+              interstellar space.
+            </p>
+          </a>
+          <a
+            href="https://www.nasa.gov/mission_pages/hubble/main/index.html"
+            target="_blank"
+            class="glass bg-black bg-opacity-50 p-6 rounded-xl backdrop-blur block hover:scale-105 transition"
+          >
+            <h3 class="text-xl font-bold mb-2">Hubble Space Telescope</h3>
+            <p class="text-gray-300 mb-4">
+              Operating since 1990, unveiling deep space imagery and fundamental
+              cosmic insights.
+            </p>
+          </a>
+          <a
+            href="https://www.esa.int/Science_Exploration/Space_Science/Rosetta"
+            target="_blank"
+            class="glass bg-black bg-opacity-50 p-6 rounded-xl backdrop-blur block hover:scale-105 transition"
+          >
+            <h3 class="text-xl font-bold mb-2">ESA Rosetta</h3>
+            <p class="text-gray-300 mb-4">
+              First spacecraft to orbit and land on a comet (67P) in 2014–2016.
+            </p>
+          </a>
+          <a
+            href="https://mars.nasa.gov/msl/home/"
+            target="_blank"
+            class="glass bg-black bg-opacity-50 p-6 rounded-xl backdrop-blur block hover:scale-105 transition"
+          >
+            <h3 class="text-xl font-bold mb-2">Curiosity Rover</h3>
+            <p class="text-gray-300 mb-4">
+              Powered by nuclear energy since 2012, exploring Martian terrain
+              and climate.
+            </p>
+          </a>
+          <a
+            href="https://www.nasa.gov/mission_pages/shuttle/main/index.html"
+            target="_blank"
+            class="glass bg-black bg-opacity-50 p-6 rounded-xl backdrop-blur block hover:scale-105 transition"
+          >
+            <h3 class="text-xl font-bold mb-2">Space Shuttle Program</h3>
+            <p class="text-gray-300 mb-4">
+              Ended in 2011, reusable orbiter missions enabled decades of
+              low-Earth research.
+            </p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-center p-6 text-gray-500">
+      &copy; 2025 Fenil Modi
+    </footer>
+  </body>
+</html>
