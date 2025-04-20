@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fenil Modi — Portfolio</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom animations */
+      .fade-in {
+        animation: fadeIn 1.5s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white font-sans leading-relaxed scroll-smooth">
+    <!-- Header / Navbar -->
+    <header class="fixed w-full bg-gray-900 bg-opacity-60 backdrop-blur z-50">
+      <nav class="container mx-auto flex items-center justify-between p-4">
+        <a href="#hero" class="text-2xl font-bold">Fenil Modi</a>
+        <ul class="flex space-x-6">
+          <li>
+            <a href="#about" class="hover:text-indigo-400 transition">About</a>
+          </li>
+          <li>
+            <a href="#projects" class="hover:text-indigo-400 transition"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#skills" class="hover:text-indigo-400 transition"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-indigo-400 transition"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="h-screen flex items-center justify-center"
+      style="
+        background: url('https://source.unsplash.com/1600x900/?galaxy,stars')
+          center/cover no-repeat;
+      "
+    >
+      <div class="text-center p-6 bg-black bg-opacity-50 rounded-xl fade-in">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-4">
+          Hi, I'm Fenil Modi
+        </h1>
+        <p class="text-xl mb-6">
+          Computer Engineering | Aerospace & Software Enthusiast
+        </p>
+        <a
+          href="#projects"
+          class="inline-block px-6 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-full font-semibold transition"
+          >View My Work</a
+        >
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto py-20 fade-in">
+      <h2 class="text-4xl font-bold text-center mb-6">About Me</h2>
+      <div class="max-w-3xl mx-auto text-lg text-gray-200">
+        <p>
+          I’m a sixth‑semester Computer Engineering student at Silver Oak
+          University, where I’ve built a solid foundation in Python, C++, and
+          Java through both coursework and hands‑on projects.
+        </p>
+        <p class="mt-4">
+          My passion lies at the intersection of aerospace technology and
+          software: I’m currently developing a Python‑based ISS trajectory
+          tracker called the Space Debris Tracking System using NASA’s public
+          APIs. Alongside that, I’ve built a Flappy Bird clone, created an air
+          quality detector, developed a WhatsApp messaging app, worked on ISS
+          detection and tracking, and explored fractal generation with the
+          Mandelbrot equation. I’m also exploring AI applications in aerospace.
+          A problem‑solver and team‑player by nature, I’m driven to bring
+          innovative science‑communication projects to life—whether that’s
+          pioneering a Global Science Explorer brand or collaborating on
+          open‑source tools that make space data more accessible.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mx-auto py-20 fade-in">
+      <h2 class="text-4xl font-bold text-center mb-12">Projects</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          class="bg-gray-800 rounded-xl p-6 hover:scale-105 transform transition"
+        >
+          <h3 class="text-2xl font-semibold mb-2">
+            Space Debris Tracking System
+          </h3>
+          <p class="text-gray-400">
+            A Python-based tool in development that uses NASA APIs to track the
+            ISS trajectory and simulate space debris movement.
+          </p>
+        </div>
+        <a
+          href="https://github.com/fenilmodi823/Projects/tree/main/Flappy"
+          target="_blank"
+          class="bg-gray-800 rounded-xl p-6 hover:scale-105 transform transition block"
+        >
+          <h3 class="text-2xl font-semibold mb-2">Flappy Bird Clone</h3>
+          <p class="text-gray-400">
+            A simple game recreated with custom logic and UI to enhance
+            understanding of game development fundamentals.
+          </p>
+        </a>
+        <a
+          href="https://github.com/fenilmodi823/Projects/tree/main/Air%20Quality%20Detector"
+          target="_blank"
+          class="bg-gray-800 rounded-xl p-6 hover:scale-105 transform transition block"
+        >
+          <h3 class="text-2xl font-semibold mb-2">Air Quality Detector</h3>
+          <p class="text-gray-400">
+            A sensor-based hardware project to measure and report air quality in
+            real-time using microcontrollers.
+          </p>
+        </a>
+        <a
+          href="https://github.com/fenilmodi823/Projects/tree/main/Whatsapp%20msg"
+          target="_blank"
+          class="bg-gray-800 rounded-xl p-6 hover:scale-105 transform transition block"
+        >
+          <h3 class="text-2xl font-semibold mb-2">WhatsApp Messaging App</h3>
+          <p class="text-gray-400">
+            A UI-driven concept app that simulates WhatsApp messaging features
+            using front-end tech and logic flow.
+          </p>
+        </a>
+        <a
+          href="https://github.com/fenilmodi823/Projects/tree/main/ISS%20Detection"
+          target="_blank"
+          class="bg-gray-800 rounded-xl p-6 hover:scale-105 transform transition block"
+        >
+          <h3 class="text-2xl font-semibold mb-2">ISS Detection & Tracking</h3>
+          <p class="text-gray-400">
+            An application built to identify and visually track the ISS using
+            external APIs and astronomical data.
+          </p>
+        </a>
+        <a
+          href="https://github.com/fenilmodi823/Projects/tree/main/Mandelbrot%20Projects"
+          target="_blank"
+          class="bg-gray-800 rounded-xl p-6 hover:scale-105 transform transition block"
+        >
+          <h3 class="text-2xl font-semibold mb-2">Mandelbrot Explorer</h3>
+          <p class="text-gray-400">
+            An experimental project exploring the Mandelbrot set through
+            mathematical computation and visual rendering.
+          </p>
+        </a>
+        <a
+          href="https://github.com/fenilmodi823/Projects/tree/main/Ray%20Tracing"
+          target="_blank"
+          class="bg-gray-800 rounded-xl p-6 hover:scale-105 transform transition block"
+        >
+          <h3 class="text-2xl font-semibold mb-2">
+            Black Hole Simulation (Ray Tracing)
+          </h3>
+          <p class="text-gray-400">
+            A visual simulation of black holes using ray tracing techniques to
+            replicate gravitational lensing and light distortion effects.
+          </p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container mx-auto py-20 fade-in">
+      <h2 class="text-4xl font-bold text-center mb-12">Skills</h2>
+      <div
+        class="flex flex-wrap justify-center gap-6 text-center text-gray-200"
+      >
+        <a
+          href="https://www.python.org"
+          target="_blank"
+          class="bg-gray-800 px-4 py-2 rounded-full hover:text-indigo-400"
+          >Python</a
+        >
+        <a
+          href="https://isocpp.org"
+          target="_blank"
+          class="bg-gray-800 px-4 py-2 rounded-full hover:text-indigo-400"
+          >C++</a
+        >
+        <a
+          href="https://www.java.com"
+          target="_blank"
+          class="bg-gray-800 px-4 py-2 rounded-full hover:text-indigo-400"
+          >Java</a
+        >
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          target="_blank"
+          class="bg-gray-800 px-4 py-2 rounded-full hover:text-indigo-400"
+          >JavaScript</a
+        >
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+          target="_blank"
+          class="bg-gray-800 px-4 py-2 rounded-full hover:text-indigo-400"
+          >HTML5</a
+        >
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+          target="_blank"
+          class="bg-gray-800 px-4 py-2 rounded-full hover:text-indigo-400"
+          >CSS3</a
+        >
+        <a
+          href="https://tailwindcss.com"
+          target="_blank"
+          class="bg-gray-800 px-4 py-2 rounded-full hover:text-indigo-400"
+          >Tailwind CSS</a
+        >
+        <a
+          href="https://reactjs.org"
+          target="_blank"
+          class="bg-gray-800 px-4 py-2 rounded-full hover:text-indigo-400"
+          >React (Basic)</a
+        >
+        <a
+          href="https://nasa.github.io"
+          target="_blank"
+          class="bg-gray-800 px-4 py-2 rounded-full hover:text-indigo-400"
+          >APIs (NASA, Public APIs)</a
+        >
+        <span class="bg-gray-800 px-4 py-2 rounded-full">Problem Solving</span>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto py-20 fade-in">
+      <h2 class="text-4xl font-bold text-center mb-8">Get in Touch</h2>
+      <div class="text-center text-lg text-gray-300">
+        <p class="mb-4">
+          Interested in collaborating, hiring, or just want to connect? Feel
+          free to reach out.
+        </p>
+        <a
+          href="https://mail.google.com/mail/?view=cm&to=fenilmmodi@gmail.com&su=Let's%20Connect!&body=Hi%20Fenil,%20I%20came%20across%20your%20portfolio%20and%20would%20love%20to%20get%20in%20touch..."
+          target="_blank"
+          class="inline-block px-6 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-full font-semibold transition"
+          >Say Hello</a
+        >
+
+        <div class="mt-6 flex justify-center space-x-6">
+          <a
+            href="https://github.com/fenilmodi823"
+            target="_blank"
+            class="hover:text-indigo-400 transition"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/fenilmodi823"
+            target="_blank"
+            class="hover:text-indigo-400 transition"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-gray-500">
+      &copy; 2025 Fenil Modi. All rights reserved.
+    </footer>
+  </body>
+</html>
