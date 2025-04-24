@@ -1,0 +1,15 @@
+/PBL - 2/
+├── src/                ← source code modules
+│   ├── qrw_generator.py
+│   ├── aes_qrw.py
+│   ├── metrics.py
+│   └── demo.py         ← CLI wrappers for demo
+│
+├── notebooks/          ← interactive Jupyter notebooks
+│   └── demo.ipynb      ← walkthrough with inline code & plots
+│
+├── results/            ← generated outputs (plots, logs)
+│
+├── README.md           ← setup instructions & usage
+│
+└── requirements.txt    ← list of dependencies for `pip install -r`
